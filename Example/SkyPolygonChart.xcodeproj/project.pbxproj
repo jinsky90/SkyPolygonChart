@@ -12,6 +12,12 @@
 		0F102D9A2339069600449248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F102D982339069600449248 /* Main.storyboard */; };
 		0F102D9C2339069600449248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F102D9B2339069600449248 /* Assets.xcassets */; };
 		0F102D9F2339069600449248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F102D9D2339069600449248 /* LaunchScreen.storyboard */; };
+		0F102DA82339074400449248 /* PolygonChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F102DA72339074400449248 /* PolygonChartView.swift */; };
+		0F102DAD233907B400449248 /* PolygonChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F102DA9233907B300449248 /* PolygonChartDataSet.swift */; };
+		0F102DAE233907B400449248 /* PolygonChartDrawSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F102DAA233907B300449248 /* PolygonChartDrawSet.swift */; };
+		0F102DAF233907B400449248 /* PolygonChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F102DAB233907B300449248 /* PolygonChartData.swift */; };
+		0F102DB0233907B400449248 /* PolygonChartDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F102DAC233907B400449248 /* PolygonChartDraw.swift */; };
+		0F102DB2233908A700449248 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F102DB1233908A700449248 /* Array+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		0F102D9B2339069600449248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F102D9E2339069600449248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F102DA02339069600449248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F102DA72339074400449248 /* PolygonChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonChartView.swift; sourceTree = "<group>"; };
+		0F102DA9233907B300449248 /* PolygonChartDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonChartDataSet.swift; sourceTree = "<group>"; };
+		0F102DAA233907B300449248 /* PolygonChartDrawSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonChartDrawSet.swift; sourceTree = "<group>"; };
+		0F102DAB233907B300449248 /* PolygonChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonChartData.swift; sourceTree = "<group>"; };
+		0F102DAC233907B400449248 /* PolygonChartDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonChartDraw.swift; sourceTree = "<group>"; };
+		0F102DB1233908A700449248 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +66,26 @@
 		0F102D932339069600449248 /* SkyPolygonChart */ = {
 			isa = PBXGroup;
 			children = (
+				0F102DB1233908A700449248 /* Array+Extension.swift */,
+				0F102DA62339072700449248 /* SkyPolygonChart */,
 				0F102D942339069600449248 /* AppDelegate.swift */,
 				0F102D962339069600449248 /* ViewController.swift */,
 				0F102D982339069600449248 /* Main.storyboard */,
 				0F102D9B2339069600449248 /* Assets.xcassets */,
 				0F102D9D2339069600449248 /* LaunchScreen.storyboard */,
 				0F102DA02339069600449248 /* Info.plist */,
+			);
+			path = SkyPolygonChart;
+			sourceTree = "<group>";
+		};
+		0F102DA62339072700449248 /* SkyPolygonChart */ = {
+			isa = PBXGroup;
+			children = (
+				0F102DA72339074400449248 /* PolygonChartView.swift */,
+				0F102DAB233907B300449248 /* PolygonChartData.swift */,
+				0F102DA9233907B300449248 /* PolygonChartDataSet.swift */,
+				0F102DAC233907B400449248 /* PolygonChartDraw.swift */,
+				0F102DAA233907B300449248 /* PolygonChartDrawSet.swift */,
 			);
 			path = SkyPolygonChart;
 			sourceTree = "<group>";
@@ -135,8 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F102DB0233907B400449248 /* PolygonChartDraw.swift in Sources */,
+				0F102DAD233907B400449248 /* PolygonChartDataSet.swift in Sources */,
+				0F102DA82339074400449248 /* PolygonChartView.swift in Sources */,
 				0F102D972339069600449248 /* ViewController.swift in Sources */,
+				0F102DAF233907B400449248 /* PolygonChartData.swift in Sources */,
+				0F102DAE233907B400449248 /* PolygonChartDrawSet.swift in Sources */,
 				0F102D952339069600449248 /* AppDelegate.swift in Sources */,
+				0F102DB2233908A700449248 /* Array+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
