@@ -9,9 +9,9 @@
 import UIKit
 
 protocol PolygonChartViewDelegate: class {
-    func setRaderChartDataSets(raderChart: PolygonChartView) -> PolygonChartDataSet?
-    func setRaderChartDrawSets(raderChart: PolygonChartView, radius: CGFloat) -> PolygonChartDrawSet
-    func numberOfRaderChart(raderChart: PolygonChartView) -> Int
+    func setPolygonChartDataSets(polygonChart: PolygonChartView) -> PolygonChartDataSet?
+    func setPolygonChartDrawSets(polygonChart: PolygonChartView, radius: CGFloat) -> PolygonChartDrawSet
+    func numberOfPolygonChart(polygonChart: PolygonChartView) -> Int
 }
 
 class PolygonChartView: UIView {
@@ -36,17 +36,17 @@ class PolygonChartView: UIView {
     }
     
     private func initIndex() {
-        guard let index = self.delegate?.numberOfRaderChart(raderChart: self) else { return }
+        guard let index = self.delegate?.numberOfPolygonChart(polygonChart: self) else { return }
         self.side = index
     }
     
     private func initData() {
-        guard let dataSet = self.delegate?.setRaderChartDataSets(raderChart: self) else { return }
+        guard let dataSet = self.delegate?.setPolygonChartDataSets(polygonChart: self) else { return }
         self.dataSet = dataSet
     }
 
     private func initDraw() {
-        guard let drawSet = self.delegate?.setRaderChartDrawSets(raderChart: self, radius: self.radius) else { return }
+        guard let drawSet = self.delegate?.setPolygonChartDrawSets(polygonChart: self, radius: self.radius) else { return }
         drawSet.drawSet?.forEach { self.drawBorderShape($0) }
         drawSet.drawSet?.forEach { self.drawText($0) }
     }
