@@ -11,7 +11,7 @@ import UIKit
 protocol PolygonChartViewDelegate: class {
     func setPolygonChartDataSets(polygonChart: PolygonChartView) -> PolygonChartDataSet?
     func setPolygonChartDrawSets(polygonChart: PolygonChartView, radius: CGFloat) -> PolygonChartDrawSet
-    func numberOfPolygonChart(polygonChart: PolygonChartView) -> Int 
+    func numberOfPolygonChart(polygonChart: PolygonChartView) -> Int  
 }
 
 class PolygonChartView: UIView {
