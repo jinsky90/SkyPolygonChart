@@ -51,9 +51,10 @@ extension ViewController: PolygonChartViewDelegate {
         
         // Data Value1
         var set1 = PolygonChartData()
-        set1.fillColor = UIColor.purple.withAlphaComponent(0.8).cgColor
+        set1.fillColor = UIColor.red.withAlphaComponent(0.6).cgColor
         set1.values = [80,75,89,80,99,70]
-        set1.lineWidth = 3
+        set1.lineWidth = 1
+        set1.strokeColor = UIColor.black.cgColor
         set1.isAnimate = true
         
         // Data Value2(ex: Average)
@@ -61,7 +62,7 @@ extension ViewController: PolygonChartViewDelegate {
         set2.lineDashPattern = [3,3]
         set2.values = [80,80,80,80,80,80]
         set2.lineWidth = 1
-        set2.strokeColor = UIColor.gray.cgColor
+        set2.strokeColor = UIColor.black.cgColor
         
         return PolygonChartDataSet(dataSet: [set1, set2])
     }

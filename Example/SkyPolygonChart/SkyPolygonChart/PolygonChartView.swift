@@ -122,9 +122,11 @@ class PolygonChartView: UIView {
         dataView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         
         dataView.layer.setAffineTransform(CGAffineTransform(scaleX: 0, y: 0))
+        dataView.alpha = 0
 
         UIView.animate(withDuration: 1.0, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
             dataView.layer.setAffineTransform(CGAffineTransform(scaleX: 1, y: 1))
+            dataView.alpha = 1
         }, completion: nil)
     }
     
