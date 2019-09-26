@@ -15,15 +15,15 @@ Usage example
 
 1\. Drop  [SkyPolygonChart] folder in your project
 
-<img src='./Resource/1.png' width="120" /></a>
+<img src='./Resource/1.png' width="300" /></a>
 
 2\. Make UIView in StoryBoard
 
-<img src='./Resource/2.png' width="120" /></a>
+<img src='./Resource/2.png' width="300" /></a>
 
 3\. Designate Custom Class ‘PolygonChartView’ in your polygonChartView
 
-<img src='./Resource/3.png' width="120" /></a>
+<img src='./Resource/3.png' width="300" /></a>
 
 4\. Set configuration by code
 
