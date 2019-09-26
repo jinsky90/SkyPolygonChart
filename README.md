@@ -29,7 +29,7 @@ Usage example
 
 - Set init
 
-```
+```swift
 class ViewController: UIViewController {
     @IBOutlet weak var polygonChartWrapView: PolygonChartView!
     
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 ```
 
 - Extension PolygonChartViewDelegate
-```
+```swift
 extension ViewController: PolygonChartViewDelegate {
     func setPolygonChartDrawSets(polygonChart: PolygonChartView, radius: CGFloat) -> PolygonChartDrawSet {
         // return PolygonChartDrawSet
@@ -68,7 +68,7 @@ extension ViewController: PolygonChartViewDelegate {
 -------------
 
 - PolygonChartDraw
-```
+```swift
 var radius: CGFloat?
 
 var fillColor       : CGColor       = UIColor.clear.cgColor
@@ -89,7 +89,7 @@ var isSkeleton      : Bool          = false
 ```
 
 - PolygonChartData
-```
+```swift
 var fillColor       : CGColor       = UIColor.clear.cgColor
 var strokeColor     : CGColor       = UIColor.clear.cgColor
 
