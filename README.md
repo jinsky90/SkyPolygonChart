@@ -1,6 +1,6 @@
 # SkyPolygonChart
 
-![pentagon_demo.gif](https://github.com/jinsky90/SkyPolygonChart/blob/master/Resource/pentagon_demo.gif) 
+<img src='./Resource/pentagon_demo.gif' />
 
 ### Manually
 
@@ -15,15 +15,15 @@ Usage example
 
 1\. Drop  [SkyPolygonChart] folder in your project
 
-<img src='./Resource/1.png' width="300" /></a>
+<img src='./Resource/1.png' width="300" />
 
 2\. Make UIView in StoryBoard
 
-<img src='./Resource/2.png' width="300" /></a>
+<img src='./Resource/2.png' width="300" />
 
 3\. Designate Custom Class ‘PolygonChartView’ in your polygonChartView
 
-<img src='./Resource/3.png' width="300" /></a>
+<img src='./Resource/3.png' width="300" />
 
 4\. Set configuration by code
 
