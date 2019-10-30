@@ -14,7 +14,7 @@ protocol PolygonChartViewDelegate: class {
     func numberOfPolygonChart(polygonChart: PolygonChartView) -> Int
 }
 
-class PolygonChartView: UIView {
+final public class PolygonChartView: UIView {
     private var radius      : CGFloat { return self.bounds.size.width > self.bounds.size.height ? self.bounds.size.height / 3 : self.bounds.size.width / 3 }
     private var xCenter     : CGFloat { return self.bounds.midX }
     private var yCenter     : CGFloat { return self.bounds.midY }
@@ -29,7 +29,7 @@ class PolygonChartView: UIView {
     
     weak var delegate: PolygonChartViewDelegate?
     
-    func start() {
+    public func start() {
         self.initIndex()
         self.initDraw()
         self.initData()
