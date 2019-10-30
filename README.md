@@ -10,6 +10,12 @@
 
 2\. Configuration
 
+### Carthage
+- Add `github "jinsky90/SkyPolygonChart"` to your `Cartfile`.
+
+### Cocoapods
+- Add pod `SkyPolygonChart` to your pod file.
+
 # 👩‍🍳 Usage
 
 1\. Drop  [SkyPolygonChart] folder in your project
