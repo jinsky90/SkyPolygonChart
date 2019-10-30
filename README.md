@@ -2,6 +2,8 @@
 
 <img src='./Resource/pentagon_demo.gif' />
 
+<img src='./Resource/polygonImage.png' />
+
 # 👨‍💻 Installation
 
 ### Manually
