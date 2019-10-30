@@ -1,17 +1,16 @@
 # SkyPolygonChart
 
-<img src='./Resource/pentagon_demo.gif' /> 
+<img src='./Resource/pentagon_demo.gif' />
+
+# 👨‍💻 Installation
 
 ### Manually
-
--------------
 
 1\. Download and drop [SkyPolygonChart] folder in your project
 
 2\. Configuration
 
-Usage example
--------------
+# 👩‍🍳 Usage
 
 1\. Drop  [SkyPolygonChart] folder in your project
 
@@ -63,11 +62,10 @@ extension ViewController: PolygonChartViewDelegate {
 }
 ```
 
-### Attribute
-
--------------
+# 👩‍🎨  Attribute
 
 - PolygonChartDraw
+
 ```swift
 var radius: CGFloat?
 
@@ -89,6 +87,7 @@ var isSkeleton      : Bool          = false
 ```
 
 - PolygonChartData
+
 ```swift
 var fillColor       : CGColor       = UIColor.clear.cgColor
 var strokeColor     : CGColor       = UIColor.clear.cgColor
