@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SkyPolygonChart"
-  spec.version      = "1.0"
+  spec.version      = "1.0.2"
   spec.summary      = "Awesome Chart supports polygons for swift!"
 
   spec.swift_version = "5.0"
