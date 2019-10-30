@@ -136,7 +136,7 @@ class PolygonChartView: UIView {
         guard let objectText = draw.objectTextSet else { return }
         
         for index in 1...side {
-            if let text = objectText[safe: index - 1] {
+            if let text = objectText[sub: index - 1] {
                 guard text != "" else { continue }
                 self.drawLabel(center: CGPoint(x: xCenter + (radius * 1.2) * sin(CGFloat(index - 1) * step),
                                                y: yCenter - (radius * 1.2) * cos(CGFloat(index - 1) * step)),
@@ -161,7 +161,7 @@ class PolygonChartView: UIView {
 }
 
 extension Array {
-    subscript (safe index: Int) -> Element? {
+    subscript (sub index: Int) -> Element? {
         return startIndex <= index && index < endIndex ? self[index] : nil
     }
 }

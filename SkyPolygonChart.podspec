@@ -19,6 +19,8 @@ Pod::Spec.new do |spec|
   spec.version      = "1.0"
   spec.summary      = "Awesome Chart supports polygons for swift!"
 
+  spec.swift_version = "5.0"
+
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
