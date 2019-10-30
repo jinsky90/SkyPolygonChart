@@ -157,3 +157,9 @@ class PolygonChartView: UIView {
     }
     
 }
+
+extension Array {
+    subscript (sub index: Int) -> Element? {
+        return startIndex <= index && index < endIndex ? self[index] : nil
+    }
+}
